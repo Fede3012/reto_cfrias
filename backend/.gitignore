@@ -3,3 +3,5 @@
 # virtual enviroment
 env/
 
+#caché
+app/__pycache__
