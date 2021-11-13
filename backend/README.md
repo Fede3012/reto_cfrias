@@ -1,14 +1,20 @@
 # CRUD CON FASTAPI, SQLALCHEMY Y MYSQL
 
 ## PASOS PARA INSTALAR
-1. Crear un ambiente virtual con Python
+0. Si no tienes el pip instalado, instalarlo
 ```
-virtualenv env -p python3
+ python -m pip install --upgrade pip
 
 ```
-2. Activar el ambiente virtual
+
+1. Crear un ambiente virtual con Python donde "env" es el nombre del virtual enviroment
 ```
-source env/bin/activate
+python -m venv env 
+
+```
+2. Activar el ambiente virtual. Si usas vscode, puede hacer que se ejecute en la terminal con clic derecho > ejecutar en la terminal.
+```
+& env/Scripts/activate
 
 ```
 3. Instalar las librerías necesarias que se encuentran en el archivo requirements.txt
@@ -19,7 +25,7 @@ pip install -r requirements.txt
 
 ## DESPLEGANDO EL AMBIENTE
 ```
-uvicorn Main:app --reload
+uvicorn app.Main:app --reload
 
 ```
 * main es el nombre del archivo main.py
